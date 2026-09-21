@@ -1,9 +1,7 @@
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import PriceTag from './PriceTag.jsx';
 import { useCart } from './CartContext.js';
-import product from '../data/products.js'
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();

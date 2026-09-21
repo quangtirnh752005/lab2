@@ -1,6 +1,5 @@
 import { Navbar, Nav, Container, Button, Badge } from 'react-bootstrap';
 import { Link, NavLink} from 'react-router-dom';
-import { useState } from 'react';
 import { useCart } from './CartContext.js';
 import {FaShoppingCart} from "react-icons/fa"
 export default function Header({ onOpenCart }) {
@@ -24,7 +23,7 @@ export default function Header({ onOpenCart }) {
           </Nav>
 
           <Button variant="outline-light" onClick={onOpenCart} aria-label="Mở giỏ hàng">
-            <FaShoppingCart>Giỏ <Badge bg="warning" text="dark">{totalItems}</Badge></FaShoppingCart> 
+            <FaShoppingCart /> Giỏ <Badge bg="warning" text="dark">{totalItems}</Badge>
           </Button>
         </Navbar.Collapse>
       </Container>
